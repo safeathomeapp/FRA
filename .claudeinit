@@ -1,0 +1,98 @@
+{
+  "project": "Fire Risk Assessment (FRA) Mobile Application",
+  "lastInitialized": "2025-11-16T16:45:00Z",
+  "status": "requirements_gathering",
+  "phase": "Phase 0 - Requirements & Planning",
+
+  "initialization_checklist": {
+    "documentation_provided": {
+      "sample_pdf_reports": false,
+      "inspection_checklists": false,
+      "building_floor_plans": false,
+      "logo_files": false,
+      "status": "❌ PENDING - User to share"
+    },
+    "critical_questions_answered": false,
+    "roadmap_document_created": false,
+    "development_can_begin": false
+  },
+
+  "server_status": {
+    "port": 3100,
+    "status": "running",
+    "check_command": "curl http://localhost:3100/api/ping",
+    "last_checked": "2025-11-16T16:41:38Z"
+  },
+
+  "database_status": {
+    "postgresql": {
+      "host": "localhost",
+      "port": 5432,
+      "database": "fire_assessments",
+      "user": "fireassess",
+      "status": "connected",
+      "tables_created": 5
+    },
+    "sqlite": {
+      "status": "ready_for_phone_app",
+      "tables": "same_schema_as_postgresql"
+    }
+  },
+
+  "git_status": {
+    "repository": "https://github.com/safeathomeapp/FRA.git",
+    "commits": 2,
+    "branch": "master",
+    "status": "pushed_to_github"
+  },
+
+  "blockers": [
+    "⏳ Sample documentation files not yet provided",
+    "⏳ Critical questions (30 items) not yet answered",
+    "⏳ Comprehensive roadmap document not created"
+  ],
+
+  "next_actions": [
+    "1. User shares sample PDF reports (2-3 examples)",
+    "2. User shares inspection checklists/forms",
+    "3. User answers QUESTIONS-CHECKLIST (prioritized by category)",
+    "4. Claude creates comprehensive roadmap in Documentation/README.md",
+    "5. User reviews and approves roadmap",
+    "6. Development Phase 1 begins"
+  ],
+
+  "questions_to_ask": {
+    "location": "Documentation/QUESTIONS-CHECKLIST.md",
+    "total_questions": 30,
+    "priority_order": [
+      "PRIORITY 1: Sample Reports & Checklists (Q1-Q6)",
+      "PRIORITY 2: Property Scale & Floor Plans (Q7-Q13)",
+      "PRIORITY 2: User Workflow (Q14-Q16)",
+      "PRIORITY 3: Team & Integration (Q17-Q20)",
+      "PRIORITY 3: Technical Environment (Q21-Q24)",
+      "LOW: Budget, Timeline, Future Features (Q25-Q30)"
+    ]
+  },
+
+  "documentation_structure": {
+    "Documentation/README.md": "⏳ To be created - Comprehensive roadmap with:",
+    "requirements": "System requirements and constraints",
+    "acceptance_criteria": "Definition of done for each feature",
+    "sprint_breakdown": "Weekly development plan",
+    "test_strategy": "Testing approach for each phase",
+    "deployment_plan": "How to deploy to devices"
+  },
+
+  "instructions_for_claude": {
+    "on_startup": [
+      "1. Check this .claudeinit file",
+      "2. Read 'blockers' section",
+      "3. If documentation_provided === false, ask user to share files",
+      "4. If questions_answered === false, present the PRIORITY 1 questions",
+      "5. Do NOT proceed to coding until all blockers cleared",
+      "6. Update this file after each step"
+    ],
+    "current_state": "WAITING FOR USER DOCUMENTATION & ANSWERS",
+    "coding_status": "🛑 ON HOLD - Requirements gathering phase"
+  }
+}
