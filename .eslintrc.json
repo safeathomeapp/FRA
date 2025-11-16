@@ -1,0 +1,8 @@
+{
+  "root": true,
+  "extends": "@react-native",
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-console": "warn"
+  }
+}

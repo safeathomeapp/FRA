@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "Bash(npm --version:*)",
+      "Bash(psql:*)",
+      "Bash(where:*)",
+      "Bash(tasklist:*)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git config:*)",
+      "Bash(npm install:*)",
+      "Bash(\"C:\\Program Files\\PostgreSQL\\17\\bin\\psql.exe\" -U postgres -c \"CREATE DATABASE fire_assessments;\")",
+      "Bash(\"C:\\Program Files\\PostgreSQL\\17\\bin\\psql.exe\" -U postgres -c \"CREATE USER fireassess WITH PASSWORD ''FireAssessmentApp123!'';\")",
+      "Bash(\"C:\\Program Files\\PostgreSQL\\17\\bin\\psql.exe\" -U postgres -c \"ALTER USER fireassess WITH SUPERUSER;\")",
+      "Bash(\"C:\\Program Files\\PostgreSQL\\17\\bin\\psql.exe\" -U postgres -c \"GRANT ALL PRIVILEGES ON DATABASE fire_assessments TO fireassess;\")",
+      "Bash(npm run migrate:*)",
+      "Bash(npm run seed:*)",
+      "Bash(\"C:\\Program Files\\PostgreSQL\\17\\bin\\psql.exe\" -U fireassess -d fire_assessments -c \"\\dt\")",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
